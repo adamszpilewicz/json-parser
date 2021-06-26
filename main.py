@@ -2,6 +2,7 @@ import argparse
 from inputs.checks import check_arg, check_arg_and_json
 import json
 import sys
+from api.api import app
 
 from encoders.jsons import json_restructure 
 
@@ -31,4 +32,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    app.run(host='0.0.0.0', port="8080",debug=True)
+
