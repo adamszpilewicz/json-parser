@@ -1,7 +1,3 @@
-from collections import defaultdict
-from functools import reduce
-
-
 def json_restructure(keys: list, record: dict) -> dict:
     structure = {}
     node = structure
