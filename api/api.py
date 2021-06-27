@@ -3,7 +3,6 @@ from encoders.jsons import json_restructure
 from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 
-
 app = Flask(__name__)
 auth = HTTPBasicAuth()
 users = {
